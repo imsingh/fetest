@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<im-tabs [tabClicked]="topSelection">
+	<im-tab *ngFor="let name of data; let i = index" (click)="selectTop(i)">{{name.top}}</im-tab>
+</im-tabs>
+<im-tabs *ngIf="topSelection !== null" [tabClicked]="leftSelection" [reset]="reset" [selectClass]="'im-tab-white'">
+	<im-tab *ngFor="let left of leftData; let i = index" (click)="selectLeft(i)">{{left}}</im-tab>
+</im-tabs>
+
+<p *ngIf="content">
+	{{content}}
+</p>

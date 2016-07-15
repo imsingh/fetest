@@ -1,0 +1,29 @@
+im-tabs {
+	width:100%;
+	height:50px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	background-color:#CBCBCB;
+}
+
+im-tab {
+	padding:20px;
+	flex-grow: 1;
+	flex-basis:0;	
+	text-align:center;
+	border:1px solid #BBB;
+}
+
+.im-tab-normal {
+	background-color:#CBCBCB;
+}
+
+.im-tab-activated {
+	background-color: #3D69C0;
+}
+
+.im-tab-white {
+	background-color:white;
+	border-bottom:none;
+}
